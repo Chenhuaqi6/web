@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework</title>
+</head>
+<body>
+    <h1>&nbsp;增加管理员</h1>
+    <form action="save" method="GET" enctype="">
+        <table border="0px" cellspacing="10px">
+            <td>姓名:</td>
+            <td><input type="text" name="username" maxlength="10" placeholder="请输入用户名" autocomplete="off"></td>
+            <td>10个字符以内</td>
+        </table>
+        <table border="0px" cellspacing="10px">
+            <td>密码:</td>
+            <td><input type="password" name="userpwd" maxlength="10" placeholder="请输入密码"></td>
+            <td>10个字符以内</td>
+        </table>
+        <table border="0px" cellspacing="10px"> 
+            <td>性别:</td>
+            <td><input id="male" type="radio" name="sex" value="male" checked>
+            <label for="male">男士</label></td>
+            <td><input id="female" type="radio" name="sex" value="female">
+            <label for="female">女士</label></td>
+
+        </table>
+        
+          <table border="0px" cellspacing = "10px" >
+            <tr> 
+                <td rowspan="2">角色:</td>
+                <td><input type="checkbox" name="identity" value="super">超级管理员</td>
+                
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="identity" value="money">账单管理员</td>
+            </tr>
+          </table>   
+               
+          
+             
+    
+        <p>
+            <input type="hidden" name="uid" value="001">
+        </p>
+        <table border="0px" cellspacing="10px" >  
+            <td>头像:</td>
+            <td><input type="file" name="uimg"></td>
+        </table>
+        <table border="0px" cellpadding="15px">
+
+            <td><input type="submit" value="保存"></td>
+            <td><input type="reset" value="重填"></td>
+        </table>
+    </form>
+    
+</body>
+</html>

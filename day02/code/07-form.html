@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+</head>
+<body>
+    <h1>表单控件只有写在form里才会跟随提交按钮发送到后台</h1>
+    <form action="login" method="get" enctype="">
+        <p>
+            用户名称 :
+            <input type="text" name="username" maxlength="10" placeholder="请输入用户名" autocomplete="off">
+        </p>
+        <p>
+            用户密码 :
+            <input type="password" name="upwd" maxlength="8" placeholder="请输入密码">
+        </p>
+        <p>
+            用户性别:
+            <input  id="male" type="radio" name="sex" value="male" checked>
+            <label for="male">男</label>
+            <input id="female" type="radio" name="sex" value="female">
+            <label for="female">女</label>
+            <input id="secret" type="radio" name="sex" value="secret">
+            <label for="secret">保密</label>
+
+        </p>
+        <p>
+            用户爱好:
+            <input type="checkbox" name="habby" value="smoke">抽烟
+            <input type="checkbox" name="habby" value="drink">喝酒
+            <input type="checkbox" name="habby" value="hothair">烫头
+            <input type="checkbox" name="habby" value="findgirl">泡妞
+            
+        </p>
+        <input type="hidden" name="uid" value="001">
+        <p>
+            用户头像 :
+            <input type="file" name="uimg">
+        </p>
+        <p>
+            用户地址 :
+            <select name="address">
+                <option value="beijng">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="gaungzhou" selected>广州</option>
+            </select>
+        </p>
+        <p>
+            个人介绍:<br>
+            <textarea name="uinfo"></textarea>
+        </p>
+        <input type="submit">
+        <input type="reset">
+        <input type="button" value="普通">
+        <p>file:///D:/oldchen/Web/day02/code/
+            login?
+            username=3534564564
+            &upwd=%2B5564564
+            &sex=female
+            &habby=smoke
+            &habby=drink
+            &uid=001
+            &uimg=
+            &address=shanghai
+            &uinfo=dsfsdfgsdf</p>
+            <button>button标签</button>
+    </form>
+    <button>button</button>
+</body>
+</html>
