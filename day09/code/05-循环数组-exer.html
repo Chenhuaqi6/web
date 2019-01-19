@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+            
+            var arr = [];
+            while(true){
+                var input = prompt("请输入数据")
+                //length 表示数组正下一个元素的下标
+                if (input == "exit" || null || " "){
+                    break;
+                }
+                arr[arr.length] = input;
+            }
+            console.log(arr);
+            // 2.求一组数据的最大值
+            var arr2 = [100,34,-56,255,-999,1200,7];
+            var max = arr2[0];
+            for (var i = 0;i <arr2.length;i++){
+                if (arr2[i] >= max ){
+                    //更新max
+                    max = arr2[i];
+                }
+            }
+            console.log(max);
+            //3. for ... in 遍历数组
+            for(var i in arr2){
+                console.log(i,arr2[i]);
+            }
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

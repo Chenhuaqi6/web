@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #d1{
+            color: red;
+
+        }
+        .c1{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 class="l1">一级标题</h1>
+    <button onclick="addAttribute()">添加</button>
+    <button onclick="getAttr()">读取</button>
+    <button onclick="removeAttr()">移除属性</button>
+
+    <script>
+        //1.获取元素节点
+        var h1 = document.getElementsByClassName("l1")[0];
+
+        function addAttribute(){
+            h1.setAttribute('id','d1');
+            h1.setAttribute('class','c1');
+        }
+        function getAttr() {
+            console.log(h1.getAttribute('id'));
+            console.log(h1.getAttribute('class'));
+
+            
+        }
+        function removeAttr(){
+            h1.removeAttribute('id');
+        }
+    </script> -->
+
+    <h1 class="l1">一级标题</h1>
+    <button onclick="addAttribute()">添加</button>
+    <button onclick="getAttr()">读取</button>
+    <button onclick="removeAttr()">移除属性</button>
+
+    <script>
+        //1.获取元素节点
+        var h1 = document.getElementsByClassName("l1")[0];
+
+        function addAttribute(){
+            h1.id = "d1";
+            h1.className = "c1";
+        }
+        function getAttr() {
+            console.log(h1.id);
+            console.log(h1.className);
+           
+           
+
+            
+        }
+        function removeAttr(){
+            h1.id = null;
+            h1.className = null;
+        }
+    </script>
+</body>
+</html>

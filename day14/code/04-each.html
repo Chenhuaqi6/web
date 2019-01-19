@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-1.11.3.js"></script>
+    <script>
+            var arr = [123,1234,3456,789,879];
+            $(arr).each(function (index,elem){
+                //遍历数组时,传入俩个数据,分别是下标和元素
+                console.log(index,elem);
+            });
+            $(function (){
+                $('p').each(function (){
+                    //获取当前的节点对象
+                    console.log(this);
+                    $(this).html('段落内容')
+                });
+            });
+    
+    </script>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</body>
+</html>

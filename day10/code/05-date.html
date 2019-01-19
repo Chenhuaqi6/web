@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            //1.创建日期对象
+            var date1 = new Date();
+            var date2 = new Date("2018-12-16 20:32:22")
+            var date3 = new Date("2000/01/01")
+            console.log(date1)
+            console.log(date2)
+            console.log(date3)
+            console.log(date1.getTime())
+
+            //2.时间分量
+            var year = date1.getFullYear();
+            var month = date1.getMonth();
+            console.log(year,month+1);
+
+            var day = date1.getDate();
+            var week = date1.getDay();
+            console.log(day,week);
+            var day1 = date2.getDate();
+            var week1 = date2.getDay(); //星期天是0
+            console.log(day1,week1);
+
+            var hour = date1.getHours();
+            var minute = date1.getMinutes();
+            var second = date1.getSeconds();
+            var millisecond = date1.getMilliseconds();
+            console.log(hour,minute,second,millisecond);
+
+            console.log(date1.toLocaleString());
+            console.log(date1.toLocaleDateString());
+            console.log(date1.toLocaleTimeString());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

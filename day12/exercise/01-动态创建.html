@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>1</p>
+    <p>2</p>
+    <p id="d3">3</p>
+
+
+    <script>
+            var div = document.createElement('div');
+            var text = document.createTextNode('文本节点添加内容');
+            div.id = 'box';
+
+
+            //body是文档中唯一的元素节点,作为document的属性存在
+            document.body.appendChild(div);
+            div.appendChild(text);
+
+            // console.log(div)
+            var h1 = document.createElement('h1');
+            h1.innerHTML = '一级标题';
+            //在div之前加h1节点
+            // document.body.insertBefore(h1,div);
+            div.appendChild(h1);
+            // //删除节点
+            div.removeChild(h1);
+            var p = document.getElementById('d3');
+            p.parentNode.removeChild(p);
+    </script>
+</body>
+</html>
+
+

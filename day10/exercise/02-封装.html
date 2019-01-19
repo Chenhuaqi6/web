@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            function createCode(len){
+                            //1.数据源
+            var arr = [0,1,2,3,4,5,"A","B","C","D","E","F","G","H"]
+            //2.随机验证码
+            var show = "";
+            for(var i = 1;i <=len;i++){
+                //3.随机下标 
+                var index = parseInt(Math.random()*arr.length);
+                show += arr[index]
+            }
+                return show;
+            }
+
+            function validatecode(){
+                var code = createCode(6)
+                //4.提示用户输入
+                var input = prompt("请输入验证码:"+code);
+            //.验证
+                if(code.toUpperCase()==input.toUpperCase()){
+                    alert("输入正确")
+                }else{
+                    alert("输入错误")
+                }
+            }
+           
+    </script>
+</head>
+<body>
+    <button onclick="validatecode()">获取验证码</button>
+</body>
+</html>

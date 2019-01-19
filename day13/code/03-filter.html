@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-1.11.3.js"></script>
+</head>
+<body>
+        <p id="d1" class="c1">窗前明月光</p>
+        <p>地上鞋俩双</p>
+        <p class="c2">天王盖地虎</p>
+        <p>小鸡炖蘑菇</p>
+        <p id="d1" class="c1">窗前明月光</p>
+        <p>地上鞋俩双</p>
+        <p class="c2">天王盖地虎</p>
+        <p>小鸡炖蘑菇</p>
+        <div>
+            <p>一入糗百深似海</p>
+        </div>
+        <button onclick="first()">:first</button>
+        <button onclick="last()">:last</button>
+        <button onclick="odd()">:odd</button>
+        <button onclick="even()">:even</button>
+        <button onclick="eq()">:eq</button>
+        <button onclick="lt()">:lt</button>
+        <button onclick="gt()">:gt</button>
+        <button onclick="not()">:not</button>
+        <script>
+
+           function first() {
+               $('.c1:first').css('color','red')
+            //    $('p:last').css('color','black')
+
+           };
+           function last(){
+               $('.c1:last').css('color','green')
+            //    $('p:first').css('color','black')
+
+           };
+           function odd(){
+               $('p:odd').css('background-color','orange')
+           };
+           function even(){
+               $('p:even').css('background-color','pink')
+           };
+           function eq(){
+               $('p:eq(5)').css('color','blue')
+           };
+           function lt(){
+               $('p:lt(5)').css('background','red')
+           };
+           function gt(){
+               $('p:gt(5)').css('background','green')
+           };
+        //    function not(){
+        //        $(':not(p,div)').css('border','3px solid red')
+        //    };
+           function not(){
+               $('p:not(.c1)').css('border','3px solid red')
+           };
+        </script>
+</body>
+</html>

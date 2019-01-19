@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            var input = Number(prompt("请输入一个整数"))
+            var arr = [];
+            while(input != 0){
+                arr[arr.length] = input % 2
+                input = parseInt(input / 2)
+            }
+            arr.reverse()
+            var r = arr.join(" ")
+            console.log(r)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

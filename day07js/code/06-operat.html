@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //1. 字符串的 + 表示拼接
+        //2. 非字符串类型数学运算,统一先转number
+        var s1 = 10 + true; //11
+        var s2 = '10'/5;
+
+        //NaN
+        var s3 = '10a' / 5;   
+        console.log(s2,s3);
+
+        var s4 = 5 / 2;
+        console.log(s4);
+        var s6 = 5 % 2;
+        console.log(s6);
+
+        //自增自减
+        var a = 10;
+        a ++;
+        ++ a;
+        console.log(a);
+        var r1 = a ++;
+
+        //12 13 先赋值再加
+        console.log(r1,a);
+        
+        //14 14 先加再赋值
+        var r2 = ++a;
+        console.log(r2,a);
+
+        var b = 10;
+        var r3 = b++ +100; //先算b+100 赋值给r3 最后自增 
+        console.log(r3,b); // 110 11
+        var a = 10;
+        var r4 = ++a + 100;
+        console.log(r4,a);
+        var n = 5;
+                var r = n++ + ++n + n++ + ++n +n;
+                console.log(r,n);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <a href="https://www.baidu.com">百度</a>
+    <button onclick="changeaddr()">点击改变超链接地址</button>
+    <script>
+        function changeaddr(){
+            //.获取元素
+            var aLink = document.getElementsByTagName('a')[0];
+            //2.改连接地址,修改超链接文本
+            aLink.href = "https://www.weibo.com";
+            aLink.innerText = "TTS";
+
+        }
+    </script>
+</body>
+</html>

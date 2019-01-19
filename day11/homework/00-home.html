@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    用户名<input type="text" name="username" placeholder="请输入6-18为字符">
+    <span></span>
+    <br>
+    <button onclick="getTrue()">点击验证</button>
+    <!-- <br> -->
+    <!-- <div style="border: 1px solid black;width: 100px;height: 100px;background-color: orange;"></div> -->
+    <script>
+            function getTrue(){
+                var input = document.getElementsByTagName('input')[0];
+                var div = document.getElementsByTagName('span')[0];
+                var len = input.value;
+                if(len.length >　18 | len.length < 6){
+                    div.innerHTML = "用户名不合法";
+                    div.style.color = "red";
+                    
+                }else{
+                    div.innerHTML = "用户名合法";
+                    div.style.color = "green";
+                }
+            }
+    </script>
+</body>
+</html>

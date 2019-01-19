@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            function subMail(){
+                var mail = "zhangsan@163.com";
+                var atIdex = mail.indexOf("@");
+                //截取
+                var username = mail.substring(0,atIdex)
+                var servername = mail.substring(atIdex+1)
+                console.log("用户名:"+username,"服务商:"+servername)
+            }
+            subMail()
+            function subDate(){
+                var carId = "412722199703170811";
+                var year = carId.substring(6,10);
+                var month = carId.substring(10,12);
+                var day = carId.substring(12,14);
+                console.log(year,month,day);
+
+            }
+            subDate()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

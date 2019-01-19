@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            /*var input = prompt("请输入成绩")
+            if(input>=90){
+                console.log("A")
+            }else if(input>=80){
+                console.log("B")
+            }else if(input >=60){
+                console.log("C")
+            }else{
+                console.log("D")
+            }*/
+            //闰年2月 29天 平年28天
+            //用户输入的month,累加整月天数 1~month-1,当前月的天数,加日期得到
+            var year =prompt("请输入年")
+            var month = prompt("请输入月份")
+            var day = Number(prompt("请输入日"))
+            //总天数
+            var sumDay = 0
+            //闰年判断
+            var isRun = year % 400 == 0 || (year % 4 == 0 && year % 100 !=0)
+            //天数累加
+            if(month == 1){
+                sumDay += day
+            }else if(month == 2){
+                sumDay +=31 +day
+            }else if(month == 3){
+                sumDay +=31 +28 +day
+            }else if(month == 4){
+                sumDay += 31 +28 +31 +day
+            }else if(month == 5){
+                sumDay += 31 +28 +31 +30 +day}
+            // }else if(month == 12){
+
+            // }
+            if(isRun && month > 2){
+                sumDay += 1
+            }
+            console.log(year+"年"+month+"月"+day+"日是当前年的",sumDay,"天")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

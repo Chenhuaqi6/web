@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            var year =prompt("请输入年");
+            var month = Number(prompt("请输入月份"));
+            var day = Number(prompt("请输入日"));
+            //总天数
+            var sumDay = 0;
+            //闰年判断
+            var isRun = year % 400 == 0 || (year % 4 == 0 && year % 100 !=0);
+            //整月天数的累加
+            switch(month - 1){
+                    case 11 :
+                        sumDay += 30;
+                    case 10 :
+                        sumDay += 31;
+                    case 9 :
+                        sumDay +=31;
+                    case 8 : 
+                        sumDay += 31;
+                    case 7 :
+                        sumDay += 31;
+                    case 6 :
+                        sumDay += 30;
+                    case 5 :
+                        sumDay +=31;
+                    case 4 : 
+                        sumDay += 30;
+                    case 3 :
+                        sumDay += 31;
+                    case 2 :
+                        sumDay += 28;
+                        if(isRun){
+                            sumDay += 1;
+                        }
+                    case 1 :
+                        sumDay +=31;
+            }
+
+            //当前月的天数
+            sumDay += day;
+            console.log(year+"年"+month+"月"+day+"日是当前年的",sumDay,"天")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

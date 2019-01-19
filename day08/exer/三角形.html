@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            //1.行数与星星个数相等
+            for(var i = 1;i < 6;i++){
+                var show = ""
+                //星星逐个打印
+                for(var j =1;j<=i;j++){
+                    //内层循环打印当前行的星星数
+                    show += "*"
+                }
+                console.log(show);
+            } 
+
+
+            for(var i =1 ; i< 6;i++){
+                n = ""
+                for(var j =1;j <= 5-i;j++){
+                    n +=" "
+                }
+                for(var k = 1;k<=2*i-1;k++){
+                    n += "*"
+                }
+                console.log(n);
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
